@@ -2,7 +2,7 @@
 
 An exploratory data analysis project on hotel offers in Riyadh, Saudi Arabia, featuring an interactive Streamlit dashboard and a simple machine learning model for price prediction.
 
-**Live Dashboard:** [Explore the app](https://riyadh-hotels-eda-a4wsjwkqrmva2shpkyxp9n.streamlit.app)
+**Live Dashboard:** [Explore the app](https://riyadh-hotels-eda-sdkagcetapd2iuwkxupmc2.streamlit.app/)
 
 ## Project Overview
 
