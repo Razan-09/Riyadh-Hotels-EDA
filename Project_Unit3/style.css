@@ -19,7 +19,9 @@ html, body, [class*="css"], .stApp {
 .stApp { background: var(--bg); }
 
 /* hide the default Streamlit chrome */
-#MainMenu, footer, header[data-testid="stHeader"] { visibility: hidden; height: 0; }
+#MainMenu, footer { visibility: hidden; }
+header[data-testid="stHeader"] { background: transparent; }
+
 
 .block-container {
     padding-top: 1.5rem;
@@ -27,7 +29,7 @@ html, body, [class*="css"], .stApp {
     max-width: 1150px;
 }
 
-/* ---------- Sidebar ---------- */
+/* Sidebar  */
 section[data-testid="stSidebar"] {
     background: #FFFFFF;
     border-right: 1px solid #E5ECEC;
@@ -42,7 +44,7 @@ section[data-testid="stSidebar"] h3 {
     font-size: 1rem;
 }
 
-/* ---------- Hero (logo + title) ---------- */
+/*  Hero (logo + title)  */
 .hero {
     display: flex;
     align-items: center;
@@ -57,7 +59,7 @@ section[data-testid="stSidebar"] h3 {
 .hero h1 { margin: 0; font-size: 2rem; font-weight: 700; color: #FFFFFF; line-height: 1.2; padding: 0; }
 .hero p { margin: 6px 0 0 0; opacity: 0.92; font-size: 1rem; }
 
-/* ---------- Navigation pills ---------- */
+/*  Navigation pills  */
 .nav { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 6px 0; }
 .nav a {
     padding: 7px 16px;
@@ -72,7 +74,7 @@ section[data-testid="stSidebar"] h3 {
 }
 .nav a:hover { background: var(--teal); color: #FFFFFF !important; }
 
-/* ---------- Section titles ---------- */
+/* Section titles  */
 .section-title {
     margin: 48px 0 6px 0;
     font-size: 1.5rem;
@@ -85,7 +87,7 @@ section[data-testid="stSidebar"] h3 {
 
 h3 { font-size: 1.05rem !important; font-weight: 600 !important; color: var(--ink); }
 
-/* ---------- Cards ---------- */
+/* Cards */
 div[data-testid="stMetric"] {
     background: var(--card);
     padding: 16px 20px;
