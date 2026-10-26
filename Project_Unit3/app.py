@@ -36,7 +36,8 @@ def style_chart(fig):
 #  data 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("Riyadh_Hotels_clean.csv", parse_dates=["checkin_date", "checkout_date"])
+    df = pd.read_csv(HERE / "Riyadh_Hotels_clean.csv", parse_dates=["checkin_date", "checkout_date"])
+    
     # TripAdvisor rating is out of 5 and Booking.com is out of 10, so we use a common 0-10 scale
     df["rating_10"] = df["rating"]
     df.loc[df["Source"] == "TripAdvisor", "rating_10"] = df["rating"] * 2
